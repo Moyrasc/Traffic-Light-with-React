@@ -9,6 +9,7 @@
 
 }
 
+
 .red {
     background: red;
     background-image: radial-gradient(brown, transparent);
@@ -26,7 +27,6 @@
         0 0 20px #111 inset,
 }
 .yellow{
-    
     background: yellow;
     background-image: radial-gradient(orange, transparent);
     background-size: 5px 5px;
@@ -75,8 +75,6 @@
         0 0 20px #111 inset,
 
 }
-
-
 /* Brillo según la luz del semaforo que este activada*/
 .lightRedOn{
     box-shadow: 0 0 100px rgba(214, 24, 24, 0.911);
