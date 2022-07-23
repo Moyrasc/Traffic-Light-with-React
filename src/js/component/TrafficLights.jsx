@@ -8,26 +8,34 @@ const TrafficLights = () => {
   //   const [redLight, setColorRed] = useState("");
   //   const [yellowLight, setColorYellow] = useState("");
 
-  // creo variable de estado para los colores del semaforo
+  // variable de estado para los colores del semaforo
   const [color, setColor] = useState("");
-  
-  // creo variable de estado para mostrar/ocultar el color morado
+
+  //variable de estado para mostrar/ocultar el color morado
   const [active, setActive] = useState(false)
 
+   // función que guarde el elemento "clickado"
+   const elementClick = (e) => {
+    const clicked = e.target.id;
+    setColor(clicked);
+  };
+ 
   //función para mostrar/activar la luz morada
   const handleActive = () =>{
 	setActive(!active)
   }
 
-  // creo una función que guarde el elemento "clickado"
-  const elementClick = (e) => {
-    const clicked = e.target.id;
-    setColor(clicked);
-  };
+	//función ciclo de luces
+  const automaticLights = () =>{
+ const colorLight = ["red","yellow","green"]
+	setInterval()
+
+  }
 
   return (
     <div className="wrapper">
-      <div className="container-fluid">
+		<div className="m-auto bg-black" id="traffic-light"></div>
+      <div className="container">
         <div
           // creo operador ternario para activar las luces
           className={"red " + (color === "red" ? "lightRedOn" : "")}
@@ -56,15 +64,17 @@ const TrafficLights = () => {
 		  ></div>
 		}	
         
-        <div className="buttons">
-          <button className="btn-hidden" onClick={handleActive}>Show me</button>
-        </div>
+   
       </div>
+	  <div className="d-grid gap-2 d-md-flex justify-content-md-center" id="buttons">
+          <button className="btn-lights" onClick={handleActive}>Show me</button>
+		  <button className="btn-cycle">Click Me!</button>
+        </div>
     </div>
   );
 };
 
 export default TrafficLights;
 
-// crear boton "activa luz morada" con su corresponddiente evento
+
 // conseguir crear Create one button that when you click on it, it cycles the traffic light selected color between red, green and yellow.

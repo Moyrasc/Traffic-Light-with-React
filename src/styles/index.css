@@ -1,98 +1,191 @@
-.container {
+body{
+    height: 100vh;
+    /* background-image: url("https://img.freepik.com/fotos-premium/hermoso-vintage-nubes-coloridas-cielo-abstracto-fondo-color-suave-color-pastel_55716-2195.jpg?w=2000"); */
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-ciudad-noche-luces-neon_1441-2588.jpg?size=626&ext=jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#traffic-light {
+    width: 30px;
+    height: 50px;
     background: #222;
-    background-image: linear-gradient(transparent 2%, #111 2%, transparent 3%, #111 30%);
-    width: 170px;
-    height: 550px;
-    border-radius: 20px;
-    position: relative;
-    border: solid 5px #333;
-
+    background-image: linear-gradient(transparent 2%,
+            #111 2%,
+            transparent 3%,
+            #111 30%);
 }
 
+.container {
+    background: #222;
+    background-image: linear-gradient(transparent 2%,
+            #111 2%,
+            transparent 3%,
+            #111 30%);
+    width: 130px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 5px #333;
+}
 
 .red {
     background: red;
     background-image: radial-gradient(brown, transparent);
     background-size: 5px 5px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    margin: 15px 0 15px 10px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    left: 35px;
     border: dotted 2px red;
-    box-shadow:
-        0 0 20px #111 inset,
+    box-shadow: 0 0 20px #111 inset;
 }
-.yellow{
+
+.yellow {
     background: yellow;
     background-image: radial-gradient(orange, transparent);
     background-size: 5px 5px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    margin: 0 0 15px 10px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border: dotted 2px yellow;
-    position: absolute;
-    top: 145px;
-    left: 35px;
-    box-shadow:
-        0 0 20px #111 inset,
+    box-shadow: 0 0 20px #111 inset;
 }
-.green{
+
+.green {
     background: green;
     background-image: radial-gradient(lime, transparent);
     background-size: 5px 5px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    margin: 0 0 15px 10px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border: dotted 2px lime;
-    position: absolute;
-    top: 270px;
-    left: 35px;
-    box-shadow:
-        0 0 20px #111 inset,
+    box-shadow: 0 0 20px #111 inset;
 }
-.purple{
+
+.purple {
     background: purple;
     background-image: radial-gradient(rgb(214, 18, 214), transparent);
     background-size: 5px 5px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    margin: 0 0 15px 10px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border: dotted 2px purple;
-    position: absolute;
-    top: 400px;
-    left: 35px;
-    box-shadow:
-        0 0 20px #111 inset,
+    box-shadow: 0 0 20px #111 inset;
+}
+
+#buttons{
+
+    margin: 20px 0 0 0;
 
 }
-/* Brillo según la luz del semaforo que este activada*/
-.lightRedOn{
+.btn-lights {
+    background-image: linear-gradient(to right, #E040FB, #00BCD4);
+    background-size: 150% 150%;
+    height: 50px;
+    width: 100px;
+    border: 2px solid #8fd3f4;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+
+}
+
+.btn-cycle {
+
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    background-size: 150% 150%;
+    height: 50px;
+    width: 100px;
+    border: 2px solid #8fd3f4;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.btn-cycle:hover {
+    -webkit-animation: gradient 3s ease infinite;
+    -moz-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+}
+
+.btn-lights:hover {
+    -webkit-animation: gradient 3s ease infinite;
+    -moz-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+}
+
+
+.lightRedOn {
     box-shadow: 0 0 100px rgba(214, 24, 24, 0.911);
     animation: flash 1.5s linear infinite;
     opacity: 100%;
 }
-.lightYellowOn{
+
+.lightYellowOn {
     box-shadow: 0 0 100px rgb(224, 213, 48);
     animation: flash 1.5s linear infinite;
     opacity: 100%;
 }
-.lightGreenOn{
+
+.lightGreenOn {
     box-shadow: 0 0 100px rgb(109, 209, 63);
     animation: flash 1.5s linear infinite;
     opacity: 100%;
 }
-.lightPurpleOn{
+
+.lightPurpleOn {
     box-shadow: 0 0 100px rgb(209, 63, 190);
     animation: flash 1.5s linear infinite;
     opacity: 100%;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
