@@ -1,9 +1,9 @@
 body{
     height: 100vh;
-    /* background-image: url("https://img.freepik.com/fotos-premium/hermoso-vintage-nubes-coloridas-cielo-abstracto-fondo-color-suave-color-pastel_55716-2195.jpg?w=2000"); */
     background-image: url("https://img.freepik.com/vector-gratis/fondo-ciudad-noche-luces-neon_1441-2588.jpg?size=626&ext=jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Edu NSW ACT Foundation', cursive;
 }
 #traffic-light {
     width: 30px;
@@ -102,7 +102,7 @@ body{
 
 .btn-cycle {
 
-    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    background-image: linear-gradient(to right, #E040FB, #00BCD4);
     background-size: 150% 150%;
     height: 50px;
     width: 100px;
@@ -110,7 +110,7 @@ body{
     border-radius: 10px;
     transition: all 0.4s ease;
 }
-
+/* animaciones hover*/
 .btn-cycle:hover {
     -webkit-animation: gradient 3s ease infinite;
     -moz-animation: gradient 3s ease infinite;
@@ -132,7 +132,7 @@ body{
 
 .lightYellowOn {
     box-shadow: 0 0 100px rgb(224, 213, 48);
-    animation: flash 1.5s linear infinite;
+    animation: flash 1s linear infinite;
     opacity: 100%;
 }
 
@@ -147,7 +147,7 @@ body{
     animation: flash 1.5s linear infinite;
     opacity: 100%;
 }
-
+/* animación gradient de los botones al clickar*/
 @-webkit-keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -189,3 +189,15 @@ body{
         background-position: 0% 50%;
     }
 }
+/*luces parpadeantes*/
+
+/* @-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+} */
