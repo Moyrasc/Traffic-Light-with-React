@@ -1,6 +1,31 @@
 # Traffic Light con React
 <img src="src/img/PreviewTrafficLight.png">
   
+  <p>
+  <a href="https://gitpod.io#https://github.com/4GeeksAcademy/react-hello.git"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
+  </a>
+</p>
+
+Esta plantilla es similar a create-react-app pero está pensada para los estudiantes de la Academia 4Geeks.
+
+##### Descargue el boilerplate usando git
+
+```
+$ git clone https://github.com/4GeeksAcademy/react-hello.git
+$ cd react-hello
+```
+
+## Instala el paquete npm:
+```
+$ npm install
+```
+
+## ¡Empieza a programar!
+
+Para Windows, Mac, Linux o Gitpod, inicie el servidor webpack con live reload:
+- `$ npm run start`
+
+
   ## 📝Instrucciones
   Simulemos un semáforo [como este](https://github.com/breatheco-de/exercise-traffic-light-react/blob/master/preview.gif)
   - La luz tiene que brillar cuando se hace clic.
@@ -16,27 +41,7 @@ El semaforo cuenta con ambos bonus, aunque he de reconocer que para mi debería 
 
 - Para la luz morada decidí utilizar el renderizado condicional en vez de ocultarla/mostrarla con css ya que esto último no me parecía lo más optimo.
 - Para el ciclo de luces utilicé un setInerval probé diferentes tiempos y al final lo dejé en 1 seg. ya que se apreciaba bien.
-<p>
-  <a href="https://gitpod.io#https://github.com/4GeeksAcademy/react-hello.git"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
-  </a>
-</p>
 
-Esta plantilla es similar a create-react-app pero está pensada para los estudiantes de la Academia 4Geeks.
+## 💫 Pruébalo tu mismo
 
-##### Descargue el boilerplate usando git
-
-```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
-$ cd react-hello
-```
-
-##### e instala el paquete npm:
-```
-$ npm install
-```
-
-## ¡Empieza a programar!
-
-Para Windows, Mac, Linux o Gitpod, inicie el servidor webpack con live reload:
-- `$ npm run start`
-
+https://traffic-light-with-react-teal.vercel.app/
