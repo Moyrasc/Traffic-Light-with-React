@@ -3,11 +3,6 @@ import { useState } from "react";
 
 //create your first component
 const TrafficLights = () => {
-  //Refactorizando código: como repetía demasiado código con estas variables de estado,decidi hacerlo de otra manera las líneas 50/51/52 pertenecen a este primer intento
-  //   const [greenLight, setColorGreen] = useState("");
-  //   const [redLight, setColorRed] = useState("");
-  //   const [yellowLight, setColorYellow] = useState("");
-
   // variable de estado para los colores del semaforo
   const [color, setColor] = useState("");
 
@@ -48,9 +43,7 @@ const TrafficLights = () => {
           className={"red " + (color === "red" ? "lightRedOn" : "")}
 		  id="red"
           onClick={elementClick}
-          // setColorRed("glow");
-          // setColorGreen("");
-          // setColorYellow("");
+
         ></div>
         <div
           className={"yellow " + (color === "yellow" ? "lightYellowOn" : "")}
